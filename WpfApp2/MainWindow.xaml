@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="RedisViewer" Height="450" Width="800">
+    <Grid>
+        <!-- 数据加载按钮 -->
+        <Button Content="Load Databases" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Click="LoadDatabasesButton_Click" />
+
+        <!-- 数据展示的 DataGrid -->
+        <DataGrid x:Name="DatabaseDataGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,50,10,10" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Redis Db" Binding="{Binding RedisDb}" Width="*" />
+                <DataGridTextColumn Header="Redis Key" Binding="{Binding RedisKey}" Width="*" />
+                <DataGridTextColumn Header="Redis Type" Binding="{Binding RedisType}" Width="*" />
+                <DataGridTextColumn Header="Data Count" Binding="{Binding RedisDataCount}" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
