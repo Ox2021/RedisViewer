@@ -3,7 +3,8 @@
 ## 介绍
 
 此应用程序是一个基于 WPF (Windows Presentation Foundation) 和 StackExchange.Redis 的简单 Redis 数据库浏览器。它允许用户连接到一个 Redis 实例，并查看指定 Redis 数据库中所有键的信息，包括每个键的类型和数据项数量。
-![image](https://github.com/user-attachments/assets/049f4534-ed4c-4b34-8da9-690f90d12504)
+![image](https://github.com/user-attachments/assets/4750176e-aa39-4f9c-ac80-427402ef3417)
+
 
 ### 功能
 - 从 Redis 服务器中读取指定数据库的所有键。
